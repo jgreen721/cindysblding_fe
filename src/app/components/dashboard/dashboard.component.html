@@ -1,0 +1,15 @@
+<div class="dash-container">
+  <div class="header">
+    <div class="user-row">
+      <h4 class="header-row-h4">{{ currUser.username }}</h4>
+      <div class="header-row-flex">
+        <h5 class="header-row-h5">Unit:203</h5>
+        <button (click)="handleLogout()" class="logout-btn">Logout</button>
+      </div>
+    </div>
+    <div class="header-overlay"></div>
+    <img class="header-bg" src="./assets/stock_inside_img.jpeg" alt="" />
+  </div>
+  <app-actionrow></app-actionrow>
+  <app-posts></app-posts>
+</div>

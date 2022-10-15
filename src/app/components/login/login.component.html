@@ -1,0 +1,45 @@
+<div class="login-container">
+  <div class="login-overlay">
+    <img class="overlay-img" src="/assets/stock_apt_cover.jpeg" alt="" />
+  </div>
+  <div class="login-col">
+    <h1>Brat'z Bldings</h1>
+    <p>Welcome home...</p>
+    <h5 class="text-danger error-msg mt-4">{{ msg }}</h5>
+  </div>
+  <div
+    class="login-col d-flex align-items-center justify-content-center flex-column"
+  >
+    <div class="login-form">
+      <div class="login-form-overlay"></div>
+      <div class="form-div">
+        <label for="username"><strong>Username:</strong></label>
+        <input
+          type="text"
+          autocomplete="off"
+          name="username"
+          [(ngModel)]="username"
+          placeholder="username..."
+          class="form-control p-1"
+        />
+      </div>
+      <div class="form-div">
+        <label for="password"><strong>Password:</strong></label>
+        <input
+          type="text"
+          autocomplete="off"
+          name="password"
+          [(ngModel)]="password"
+          placeholder="password..."
+          class="form-control p-1"
+        />
+      </div>
+      <div class="form-div">
+        <button (click)="handleLogin()" class="login-btn btn">Login</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <h5><strong>Footer&copy;</strong></h5>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.action-row {
+  display: flex;
+  height: 200px;
+  z-index: 10;
+  position: relative;
+  background: linear-gradient(rgb(37, 34, 34), rgb(26, 22, 22));
+}
+
+.action-row::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -25%;
+  width: 150%;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(rgb(37, 34, 34), rgb(26, 22, 22));
+}
+
+.action-btn {
+  flex: 1;
+  margin: 0.5em;
+  background: radial-gradient(blue, rgb(89, 89, 218));
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s ease;
+  position: relative;
+  z-index: 12;
+  transform: translateY(-4em);
+}
+
+.action-btn i {
+  font-size: 3rem;
+  color: white;
+}
+
+.action-btn:hover {
+  box-shadow: -3px 5px 30px inset;
+  transform: translateY(-3.5em) skewY(1deg);
+}
+
+.action-btn:nth-child(3):hover {
+  box-shadow: -3px 5px 30px inset;
+  transform: translateY(-3.5em);
+}
