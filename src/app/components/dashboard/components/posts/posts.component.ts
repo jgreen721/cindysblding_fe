@@ -12,9 +12,9 @@ export class PostsComponent implements OnInit {
   constructor(private apiService:ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.getPosts().subscribe(data=>{
-        this.posts = data;
-        console.log(data)
+    this.apiService.getPosts().subscribe((data:any)=>{
+         this.posts = data.posts
+        console.log(data.posts)
     })
   }
 

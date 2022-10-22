@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ApiService } from './api.service';
 import { Observable } from 'rxjs';
+import { BASE_URL } from '../const';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-    public apiUrl = "http://localhost:4455"
+    public apiUrl = BASE_URL
   constructor(private apiService:ApiService, private http:HttpClient) { }
 
   currentUser:any={};

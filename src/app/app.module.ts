@@ -9,7 +9,11 @@ import { AdminComponent } from './components/admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from "@angular/common/http";
 import { PostsComponent } from './components/dashboard/components/posts/posts.component';
-import { ActionrowComponent } from './components/dashboard/components/actionrow/actionrow.component'
+import { ActionrowComponent } from './components/dashboard/components/actionrow/actionrow.component';
+import { PostComponent } from './components/dashboard/components/post/post.component';
+import { MaintenanceComponent } from './components/dashboard/components/maintenance/maintenance.component';
+import { AddpostComponent } from './components/dashboard/components/addpost/addpost.component';
+import { PaymentModalComponent } from './components/dashboard/components/payment-modal/payment-modal.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ActionrowComponent } from './components/dashboard/components/actionrow/
     DashboardComponent,
     AdminComponent,
     PostsComponent,
-    ActionrowComponent
+    ActionrowComponent,
+    PostComponent,
+    MaintenanceComponent,
+    AddpostComponent,
+    PaymentModalComponent
   ],
   imports: [
     BrowserModule,

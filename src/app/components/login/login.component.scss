@@ -12,29 +12,39 @@
   animation: focusimg 3s forwards;
 }
 
-.login-container::after {
-  height: 500%;
-  width: 90%;
-  background: linear-gradient(white, white, transparent);
-  opacity: 20%;
-  position: absolute;
-  top: -150%;
-  left: -70%;
-  content: "";
-  transform: rotate(45deg);
-  // animation: glimmer 1.2s 5s forwards;
-}
+// .login-container::after {
+//   height: 500%;
+//   width: 150%;
+//   background: linear-gradient(white, white, transparent);
+//   opacity: 20%;
+//   position: absolute;
+//   top: -180%;
+//   left: -60%;
+//   content: "";
+//   transform: rotate(45deg);
+//   animation: glimmer 10.2s 5s infinite;
+// }
 
-@keyframes glimmer {
-  0% {
-    top: -80%;
-    left: -40%;
-  }
-  100% {
-    top: -30%;
-    left: 90%;
-  }
-}
+// @keyframes glimmer {
+//   0% {
+//     transform: rotate(55deg);
+//   }
+
+//   25% {
+//     transform: rotate(-55deg);
+//   }
+
+//   50% {
+//     transform: rotate(25deg);
+//   }
+
+//   75% {
+//     transform: rotate(-55deg);
+//   }
+//   100% {
+//     transform: rotate(85deg);
+//   }
+// }
 
 .login-overlay {
   height: 100%;
@@ -127,7 +137,12 @@ h1 {
   font-size: 7rem;
   letter-spacing: 0.05em;
   text-shadow: 2px 3px 8px white;
-  transition: 0.2s ease;
+  transition: 0.8s ease;
+  font-weight: 800;
+}
+
+h1:hover {
+  text-shadow: 2px 3px 28px white;
 }
 
 p {
@@ -178,6 +193,11 @@ p {
   margin-top: 0.75em;
   width: 100%;
   padding: 0.25em;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: rgb(240, 55, 22);
 }
 
 .footer {

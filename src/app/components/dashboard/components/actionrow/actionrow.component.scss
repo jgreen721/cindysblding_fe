@@ -1,20 +1,13 @@
 .action-row {
   display: flex;
-  height: 200px;
+  height: 600px;
   z-index: 10;
   position: relative;
+  align-items: center;
+  flex-direction: column;
+  // width: 100%
   background: linear-gradient(rgb(37, 34, 34), rgb(26, 22, 22));
-}
-
-.action-row::before {
-  content: "";
-  position: absolute;
-  top: -60%;
-  left: -25%;
-  width: 150%;
-  height: 300px;
-  border-radius: 50%;
-  background: linear-gradient(rgb(37, 34, 34), rgb(26, 22, 22));
+  // max-width: 450px;
 }
 
 .action-btn {
@@ -27,7 +20,9 @@
   transition: 0.5s ease;
   position: relative;
   z-index: 12;
-  transform: translateY(-4em);
+  width: 300px;
+  height: 200px;
+  // transform: translateY(-4em);
 }
 
 .action-btn i {
@@ -37,10 +32,42 @@
 
 .action-btn:hover {
   box-shadow: -3px 5px 30px inset;
-  transform: translateY(-3.5em) skewY(1deg);
+  transform: translateX(-1.5em) skewY(1deg);
 }
 
 .action-btn:nth-child(3):hover {
   box-shadow: -3px 5px 30px inset;
-  transform: translateY(-3.5em);
+  transform: translateX(-1.5em);
+}
+
+@media screen and (max-width: 650px) {
+  .action-row {
+    width: 100%;
+    height: 200px;
+    flex-direction: row;
+  }
+
+  .action-btn {
+    transform: translateY(-4em);
+  }
+  .action-row::before {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -25%;
+    width: 150%;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(37, 34, 34), rgb(26, 22, 22));
+  }
+
+  .action-btn:hover {
+    box-shadow: -3px 5px 30px inset;
+    transform: translateY(-3.75em) skewY(1deg);
+  }
+
+  .action-btn:nth-child(3):hover {
+    box-shadow: -3px 5px 30px inset;
+    transform: translateY(-3.75em);
+  }
 }
